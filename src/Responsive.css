@@ -1,0 +1,172 @@
+.sidebarMenuBtn {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 200;
+  display: none;
+}
+
+.candidateName {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmTitle {
+  width: auto;
+  text-align: center;
+  background-color: #1ab394;
+  color: white;
+}
+
+.confirmVoteBtns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+
+  margin-top: -15px;
+}
+
+.confirmVoteContainer {
+  width: 25vw;
+  
+}
+
+.Sidebar {
+}
+
+.Sidebar.visible {
+  left: 0; /* Slide in */
+}
+
+.loginInput {
+  /* margin-bottom: 10px; */
+  width: 40ch;
+}
+
+.thankYouBody {
+}
+
+.resultsBarChart{
+  width: 600;
+}
+.resultsContainer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.logoutButtonContainer{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+  /* width: ; */
+  /* border-radius: 100; */
+}
+
+@media (max-width: 600px) {
+  .Sidebar {
+    display: block; /* Always display on small screens */
+    position: fixed;
+    /* top: 0; Start from the top */
+    left: -30%; /* Start position off-screen */
+    width: 250px;
+
+    /* height: 100%; Full height */
+    /* background-color: #333; Example background */
+    transition: left 0.3s ease; /* Smooth slide-in effect */
+    z-index: 100;
+  }
+  .sidebarMain {
+    position: fixed;
+    top: 0;
+  }
+
+  .sidebarMenuBtn {
+    display: block;
+    top: 10px; /* Adjust for spacing */
+    left: 10px; /* Adjust for spacing */
+  }
+
+  .votePage {
+    width: 200px;
+  }
+
+  .loginInput {
+    width: 80vw;
+  }
+
+  .votePage {
+    width: 80vw;
+  }
+
+  .listContainer {
+    width: 80vw;
+    /* height: 100px; */
+  }
+  .profileRow {
+    height: 100px;
+    width: 100px;
+  }
+
+  .App {
+    display: flex;
+    justify-content: center;
+  }
+
+  .candidateName {
+    font-size: 1rem;
+  }
+
+  .candidateVoteInfo {
+    border: none;
+    display: block;
+
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+    width: 100px;
+    font-size: 0.5rem;
+    /* position: ; */
+    margin-top: -30px;
+  }
+
+  .tableConfirm {
+    /* width: 100vw; */
+    width: 100vw;
+  }
+
+  .dialogTitle {
+    width: 100px;
+  }
+
+  .confirmVoteContainer {
+    width: 80vw;
+  }
+
+  .confirmBtns {
+    /* width: 300px; */
+  }
+
+  .thankYouBody {
+    text-align: center;
+  }
+
+  .resultsContainer{
+    width: 80vw;
+}
+.homeTopLabel{
+
+  font-size: 1rem;
+  line-height: 20rem;
+  height: 2rem;
+}
+
+.HomePosition{
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.BarChart{
+  width: 100px;
+}
+
+}
